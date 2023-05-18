@@ -1,0 +1,109 @@
+a {
+    text-decoration: none;
+    color: #363636;
+}
+.ns {
+    font-family: "Noto Sans TC";
+}
+.js {
+    font-family: "Josefin Sans";
+}
+.h1-48 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+.h2-36 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+.h3-32 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+.body-24 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+.body-20 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+.body-16 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+
+mark.orange {
+    background: linear-gradient(transparent 20%, #ffd887, transparent 95%);
+    padding: 2px 1px;
+}
+
+/* - 頁面區域 */
+.pageSubTitle {
+    color: #9a9a9a;
+}
+.pageCardText {
+    line-height: 175%;
+    margin-bottom: 40%;
+}
+/* - 頁面區域 */
+
+/* - 地圖區域 */
+.mapText {
+    font-weight: 400;
+    margin-top: 40px;
+}
+/* - 地圖區域 */
+
+/* - 場域區域 */
+.tagTitle {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.02em;
+}
+.serviceTitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+.serviceText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+/* - 場域區域 */
+
+/* - 進駐區域 */
+.enterCardTextIcon {
+    height: 21px;
+    width: 21px;
+}
+.enterCardTextArea {
+    text-align: start;
+    display: inline-block;
+    width: 84%;
+}
+.enterCardText {
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-left: 16px;
+}
+
+/* - 進駐區域 */

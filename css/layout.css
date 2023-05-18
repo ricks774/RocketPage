@@ -1,0 +1,254 @@
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    margin: 0 auto;
+    max-width: 1440px;
+    color: #363636;
+}
+
+.scroll {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+.topBar {
+    background: #ffffff;
+    max-width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+/* *頁面選擇區塊 */
+.pageChoose {
+    background: url(../image/banner-bg.png);
+    position: relative;
+}
+.pageArea {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s ease;
+    margin: 160px 0;
+}
+.pageArea:hover {
+    transform: translateY(-14px);
+}
+.pageBox {
+    border: 2px #e0e0e0 solid;
+    background: #ffffff;
+    border-radius: 24px;
+    width: 100%;
+    height: 448px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+}
+.btnType {
+    color: #363636;
+    cursor: pointer;
+}
+.pageBtnTitle {
+    text-align: center;
+    letter-spacing: 0.02em;
+    position: absolute;
+    top: -42px;
+}
+.pageBtnTitle_eng {
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #9a9a9a;
+    margin-top: 36px;
+}
+.pageText {
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 175%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-top: 28px;
+}
+.pageIcon_logo {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin-top: 36px;
+}
+.pageIcon_bg {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    bottom: -60px;
+    z-index: 1;
+}
+.pageIcon_bg_b {
+    background: #bfc9f0;
+}
+.pageIcon_bg_p {
+    background: #eee6ff;
+}
+.pageTitle {
+    font-family: "Noto Sans TC";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+/* *頁面選擇區塊 */
+
+/* *職位介紹 */
+.introArea {
+    /* height: 712px; */
+    /* max-width: 100%; */
+    background: #e6ebff;
+    border-radius: 40px;
+    padding: 0 40px;
+}
+.textArea {
+    margin-top: 60px;
+    margin-left: 76px;
+}
+.jobCard {
+    background: #ffffff;
+    border-radius: 24px;
+    /* width: 636px;
+    height: 280px; */
+    max-width: 100%;
+    margin: 32px 0;
+    display: flex;
+}
+.jobIntro {
+    margin-top: 36px;
+    margin-left: 36px;
+}
+.skills {
+    display: flex;
+}
+.jobCard-r {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.introPic-bg {
+    width: 169px;
+    height: 208px;
+    right: 36px;
+    top: 36px;
+    background: #f0f0f0;
+    border-radius: 24px;
+    position: absolute;
+    /* z-index: 10; */
+    right: 36px;
+}
+/* - 職位介紹 */
+
+/* - 作品區域 */
+.productsArea {
+    margin-top: 92px;
+}
+/* - 作品區域 */
+
+/* - 培訓區域 */
+.trainingArea {
+    background: #f8f9fd;
+    /* height: 2320px; */
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trainingDate {
+    max-width: 80%;
+    display: flex;
+    margin-top: 29px;
+    white-space: nowrap;
+}
+
+/* 卡片區域 */
+.card-body {
+    display: flex;
+    align-items: center;
+}
+.trainingInfoArea {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+.trainingTextArea {
+    margin-left: 32px;
+    width: 60%;
+    text-align: left;
+}
+
+.trainingContent {
+    margin-bottom: 36px;
+    width: 100%;
+}
+/* - 培訓區域 */
+
+.blue-bg {
+    position: relative;
+}
+/* - 教練區塊 */
+.coachShow {
+    margin-top: 40px;
+}
+.coachInfo {
+    margin-top: 30px;
+}
+/* - 教練區塊 */
+
+/* - QA區塊 */
+.qaArea {
+    margin-top: 128px;
+    margin-bottom: 128px;
+}
+.qaCard {
+    display: block;
+}
+.qaBox {
+    display: flex;
+}
+.qaBoxTitle {
+    margin-bottom: 8px;
+}
+/* - QA區塊 */
+
+/* -協助區塊 */
+.assistArea {
+    padding: 0;
+    padding-left: 72px;
+    position: relative;
+}
+.assistScroll {
+    display: grid;
+    gap: var(--size-3);
+    grid-auto-flow: column;
+    grid-auto-columns: 16%;
+    overflow-x: scroll;
+    overscroll-behavior-inline: contain;
+    /* scrollbar-width: none; */
+}
+.assistScroll::-webkit-scrollbar {
+    width: 0;
+}
+/* - 協助區塊 */
+
+/* - 底部區塊 */
+.footerArea {
+    margin: 36px 0;
+}
+/* - 底部區塊 */

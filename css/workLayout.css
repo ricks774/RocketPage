@@ -1,0 +1,45 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* * border */
+.br-40 {
+    border-radius: 40px;
+}
+.br-24 {
+    border-radius: 24px;
+}
+.br-16 {
+    border-radius: 16px;
+}
+.br-12 {
+    border-radius: 12px;
+}
+/* * border */
+
+/* - 頁面區塊 */
+.chosePage {
+    margin-top: 64px;
+}
+.pageChoose {
+    background-image: url(../image/banner-bg.png);
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+/* - 頁面區域 */
+
+/* - 地圖區塊 */
+.mapArea {
+    border-radius: 40px;
+}
+.mapTextBox {
+    width: 70%;
+}
+/* - 地圖區塊 */
+
+/* - 底部區塊 */
+.footerArea {
+    margin: 36px 0;
+}
+/* - 底部區塊 */
