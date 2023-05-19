@@ -92,10 +92,37 @@ ul {
 
 .scroll-x {
     white-space: nowrap;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 .scroll-x::-webkit-scrollbar {
     width: 0;
+}
+.scrollPic {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-x 13s linear infinite;
+}
+
+.scrollPic img {
+    margin-right: 20px;
+}
+@keyframes scroll-x {
+    0%,
+    20% {
+        transform: translateX(0%);
+    }
+    25%,
+    45% {
+        transform: translateX(-50%);
+    }
+    50%,
+    75% {
+        transform: translateX(-150%);
+    }
+    80%,
+    100% {
+        transform: translateX(-248%);
+    }
 }
 /* - 場域區塊 */
 
