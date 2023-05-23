@@ -58,13 +58,16 @@ ul {
     transition: transform 0.3s ease;
 }
 .pageArea:hover {
-    transform: translateY(-14px);
+    transform: translateY(-16px);
 }
 .pageIcon_logo {
     height: 100px;
     width: 100px;
 }
-
+.intImg {
+    height: 100px;
+    width: 100px;
+}
 .pageIcon_bg {
     width: 120px;
     height: 120px;
@@ -72,7 +75,337 @@ ul {
     z-index: -1;
 }
 
+@media (max-width: 428px) {
+    .pageCard_m {
+        /* background: paleturquoise; */
+        background: #ffffff;
+        width: 90%;
+        border: 2px solid #e0e0e0;
+        border-radius: 16px;
+        padding: 24px;
+        position: relative;
+    }
+    .pageArea_m {
+        display: flex;
+        align-items: center;
+    }
+    .pageArea_m h1 {
+        margin: 0;
+    }
+    .pageIcon_logo {
+        width: 48px;
+        height: 48px;
+        margin-right: 8px;
+    }
+    .pageIcon_bg {
+        height: 80px;
+        width: 80px;
+    }
+}
 /* - 頁面元件 */
+
+/* - 介紹元件 */
+.skills > p {
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #7f94e2;
+    border: 3px solid #7f94e2;
+    border-radius: 30px;
+    padding: 6px 20px;
+    margin-right: 10px;
+}
+
+.introPic-bg {
+    background-color: #f0f0f0;
+    position: relative;
+}
+.introPic {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    left: -30%;
+    bottom: 20%;
+}
+
+@media (max-width: 428px) {
+    .mapTextBox {
+        width: 100% !important;
+    }
+    .skills > p {
+        font-size: 12px;
+    }
+    .jobSubTitle {
+        font-size: 20px;
+        margin: 0 !important;
+    }
+    .introPic-bg {
+        height: 60px;
+        border-radius: 12px;
+        margin-top: 40%;
+    }
+    .introPic {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+/* - 介紹元件 */
+
+/* - 案例元件 */
+@media (max-width: 428px) {
+    .product {
+        white-space: nowrap;
+        overflow-x: auto;
+        padding-left: 10%;
+    }
+}
+
+/* - 案例元件 */
+
+/* - 培訓元件 */
+.trainingDate {
+    background: #ffffff;
+    box-shadow: 0px 2px 4px #e8e8e8;
+    border-radius: 50px;
+    display: flex;
+    padding: 17px 24px;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 16px;
+    overflow: hidden;
+}
+.line {
+    border: 2px solid #f0f0f0;
+    transform: rotate(180deg);
+    margin: 0 12px;
+}
+
+.trainingCard {
+    background: #ffffff;
+    background-size: 20%;
+    border: 2px solid #f0f0f0;
+    border-radius: 16px;
+    /* margin: 40px 0; */
+    position: relative;
+    background-image: url("../image/training-bg.png");
+}
+.trainingName {
+    position: absolute;
+    padding: 12px 40px;
+    background: #ffffff;
+    border: 2px solid #363636;
+    border-radius: 12px;
+    font-family: "Noto Sans TC";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    left: 40px;
+    top: -32px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0);
+}
+.trCardTitle {
+    display: inline-block;
+    border-bottom: 4px solid #363636;
+    margin-bottom: 16px;
+}
+.training-bg-m {
+    display: none;
+}
+
+@media (max-width: 428px) {
+    .trainingDate {
+        font-size: 14px;
+        box-shadow: 0px 2px 4px #e8e8e8;
+        border-radius: 50px;
+        justify-content: flex-start !important;
+    }
+    .trainingName {
+        font-size: 20px;
+        padding: 12px 20px;
+    }
+    .training-bg-m {
+        display: block;
+        margin-top: 15%;
+        padding-left: 12%;
+    }
+    .trainingContent {
+        padding: 0 10%;
+    }
+}
+
+/* - 培訓元件 */
+
+/* - 教練元件 */
+.coachPicArea {
+    background-color: #ffffff;
+    border: 2px solid #363636;
+    border-radius: 16px;
+    width: 251px;
+    height: 160px;
+    position: relative;
+}
+.coachPicBox {
+    height: 180px;
+    width: 180px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+.coachPic {
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    object-fit: cover; */
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.coachName {
+    color: #363636;
+    background: #ffffff;
+    border: 2px solid #363636;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    position: absolute;
+    writing-mode: vertical-lr;
+    padding: 20px 13px 20px 10px;
+    top: -20%;
+    right: 0;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0);
+    transition: transform 0.3s ease;
+}
+.coachPicArea:hover .coachName {
+    transform: translateY(-16px);
+}
+.nav-link.active {
+    background-color: #e6ebff !important;
+}
+.joinBtn {
+    width: 83%;
+    border: 2px solid #363636;
+    border-radius: 16px;
+}
+.joinBtn h3 {
+    transition: transform 0.5s ease;
+}
+.joinBtn:hover h3 {
+    transform: translateX(-5%);
+}
+
+@media (max-width: 428px) {
+    .coachArea {
+    }
+    .coachPicArea {
+        max-width: 332px;
+        max-height: 200px;
+        border-radius: 24px !important;
+    }
+    .coachPicBox {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+/* - 教練元件 */
+
+/* - QA元件 */
+.cutLine {
+    background: #f7f7f7;
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+}
+.qaBox {
+    display: flex;
+}
+.qaTextBox {
+    width: 80%;
+    /* padding: 0 5%; */
+}
+.qaBoxTitle {
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+.qaBoxText {
+    font-weight: 500;
+}
+.qaIcon {
+    height: 24px;
+    width: 24px;
+    margin: 0 32px;
+}
+
+.icon1 {
+    background-image: url(../image/ic-no.1-lg.svg);
+}
+.icon2 {
+    background-image: url(../image/ic-no.2-lg.svg);
+}
+.icon3 {
+    background-image: url(../image/ic-no.3-lg.svg);
+}
+.icon4 {
+    background-image: url(../image/ic-no.4-lg.svg);
+}
+.icon5 {
+    background-image: url(../image/ic-no.5-lg.svg);
+}
+
+@media (max-width: 428px) {
+    .qaTextBox {
+        width: 70%;
+        padding: 0 2%;
+    }
+}
+/* - QA元件 */
+
+/* - 協助單位元件 */
+.assistCardImg-bg {
+    background: #ffffff;
+    border-radius: 12px;
+    width: 196px;
+    height: 148px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.assistCardImg {
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain;
+}
+.assistTitle {
+    position: absolute;
+    top: -8%;
+    left: 0;
+}
+
+@media (max-width: 428px) {
+    .assistCardImg-bg {
+        width: 156px;
+        height: 120px;
+    }
+    .assistBox_m {
+        width: 50%;
+    }
+}
+/* - 協助單位元件 */
 
 /* - 地圖區塊 */
 .mapFrame {
@@ -182,3 +515,34 @@ ul {
     transform: translateX(-14px);
 }
 /* - 進駐區塊 */
+
+/* - 底部元件 */
+.footerArea {
+    margin: 36px 0;
+}
+.footerArea_m {
+    display: none;
+}
+
+@media (max-width: 428px) {
+    .footerArea_m {
+        display: block;
+        margin: 20px 0;
+    }
+    .footerText {
+        font-size: 14px;
+    }
+}
+/* - 底部元件 */
+
+.m_show {
+    display: none;
+}
+@media (max-width: 428px) {
+    .m_hide {
+        display: none;
+    }
+    .m_show {
+        display: block;
+    }
+}

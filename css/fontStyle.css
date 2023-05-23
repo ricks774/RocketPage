@@ -46,20 +46,66 @@ a {
     letter-spacing: 0.02em;
 }
 
+@media (max-width: 428px) {
+    .h1-48 {
+        font-size: 32px;
+    }
+    .h3-32 {
+        font-size: 24px;
+    }
+}
+
+mark.yellow {
+    background: linear-gradient(transparent 20%, #ffeea3, transparent 95%);
+    padding: 2px 1px;
+}
+
 mark.orange {
     background: linear-gradient(transparent 20%, #ffd887, transparent 95%);
     padding: 2px 1px;
 }
 
 /* - 頁面區域 */
+.pageTitle {
+    position: absolute;
+    top: -9%;
+}
 .pageSubTitle {
     color: #9a9a9a;
 }
 .pageCardText {
     line-height: 175%;
-    margin-bottom: 40%;
 }
 /* - 頁面區域 */
+
+/* - 介紹區域 */
+.jobSubTitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #9a9a9a;
+}
+/* - 介紹區域 */
+
+/* - 教練區域 */
+.coachInfo {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.02em;
+    list-style-type: disc;
+}
+.coachInfo a {
+    text-decoration: underline;
+}
+/* - 教練區域 */
+
+/* - 協助單位區域 */
+.assistUnit {
+    font-weight: 700;
+}
+/* - 協助單位區域 */
 
 /* - 地圖區域 */
 .mapText {
@@ -105,5 +151,4 @@ mark.orange {
     margin-bottom: 0;
     margin-left: 16px;
 }
-
 /* - 進駐區域 */

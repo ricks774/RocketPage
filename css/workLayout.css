@@ -29,12 +29,25 @@ img {
 }
 /* - 頁面區域 */
 
+/* - 介紹區域 */
+.introArea {
+    height: 660px;
+    overflow: scroll;
+}
+.introArea::-webkit-scrollbar {
+    width: 0;
+}
+.skills {
+    display: flex;
+}
+/* - 介紹區域 */
+
 /* - 地圖區塊 */
 .mapArea {
     border-radius: 40px;
 }
 .mapTextBox {
-    width: 70%;
+    width: 80%;
 }
 /* - 地圖區塊 */
 
