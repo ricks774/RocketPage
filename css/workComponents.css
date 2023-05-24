@@ -270,6 +270,13 @@ ul {
     bottom: 0;
     margin: auto;
 }
+.coachArea {
+    padding-top: 3%;
+    overflow-x: scroll;
+}
+.coachArea::-webkit-scrollbar {
+    width: 0;
+}
 .coachName {
     color: #363636;
     background: #ffffff;
@@ -315,6 +322,10 @@ ul {
     .coachPicBox {
         width: 220px;
         height: 220px;
+    }
+    .coachArea {
+        overflow-x: scroll;
+        padding-top: 20%;
     }
 }
 
