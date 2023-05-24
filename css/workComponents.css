@@ -156,14 +156,15 @@ ul {
 /* - 介紹元件 */
 
 /* - 案例元件 */
-@media (max-width: 428px) {
-    .product {
-        white-space: nowrap;
-        overflow-x: auto;
-        padding-left: 10%;
-    }
-}
 
+.product {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding-left: 10%;
+}
+.product::-webkit-scrollbar {
+    width: 0;
+}
 /* - 案例元件 */
 
 /* - 培訓元件 */
@@ -392,6 +393,16 @@ ul {
     position: absolute;
     top: -8%;
     left: 0;
+}
+
+@media (max-width: 1024px) {
+    .assistCardImg-bg {
+        width: 156px;
+        height: 120px;
+    }
+    .assistBox_m {
+        width: 30%;
+    }
 }
 
 @media (max-width: 428px) {
