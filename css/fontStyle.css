@@ -50,8 +50,14 @@ a {
     .h1-48 {
         font-size: 32px;
     }
+    .h2-36 {
+        font-size: 28px;
+    }
     .h3-32 {
         font-size: 24px;
+    }
+    .body-20 {
+        font-size: 16px;
     }
 }
 
@@ -112,6 +118,12 @@ mark.orange {
     font-weight: 400;
     margin-top: 40px;
 }
+
+@media (max-width: 428px) {
+    .mapText {
+        margin-top: 16px;
+    }
+}
 /* - 地圖區域 */
 
 /* - 場域區域 */
@@ -120,6 +132,9 @@ mark.orange {
     font-weight: 700;
     font-size: 28px;
     letter-spacing: 0.02em;
+}
+.hdText {
+    color: #757575;
 }
 .serviceTitle {
     font-weight: 700;

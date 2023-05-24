@@ -306,8 +306,6 @@ ul {
 }
 
 @media (max-width: 428px) {
-    .coachArea {
-    }
     .coachPicArea {
         max-width: 332px;
         max-height: 200px;
@@ -415,12 +413,28 @@ ul {
     border-radius: 16px;
     padding: 12px;
 }
+
+@media (max-width: 428px) {
+    .mapArea {
+        border-radius: 24px;
+    }
+    .mapFrame {
+        width: 332px;
+        height: 332px;
+        border-radius: 12px;
+    }
+}
 /* - 地圖區塊 */
 
 /* - 場域區塊 */
 .serviceIcon {
     width: 120px;
     height: 120px;
+}
+.hdPic {
+    border: 2px solid #cdcdcd;
+    border-radius: 16px;
+    padding: 1%;
 }
 
 .scroll-x {
@@ -455,6 +469,16 @@ ul {
     80%,
     100% {
         transform: translateX(-248%);
+    }
+}
+
+@media (max-width: 428px) {
+    .placeArea {
+        padding: 0 10%;
+    }
+    .tagTitle {
+        font-size: 20px;
+        margin-bottom: 2% !important;
     }
 }
 /* - 場域區塊 */
@@ -513,6 +537,35 @@ ul {
 }
 .enterFormBox:hover .enterFormTitle {
     transform: translateX(-14px);
+}
+.enterArea::-webkit-scrollbar {
+    width: 0;
+}
+@media (max-width: 428px) {
+    .hdTitle {
+        margin: 4% 0 !important;
+    }
+    .hdText {
+        margin-bottom: 10%;
+    }
+    .serviceBox {
+        display: flex;
+        text-align: left;
+    }
+    .serviceIcon {
+        width: 48px;
+        height: 48px;
+        margin-right: 16px;
+    }
+    .serviceTitle {
+        margin: 0 !important;
+        font-size: 16px;
+    }
+    .serviceText {
+        margin: 0 !important;
+    }
+    .enterArea {
+    }
 }
 /* - 進駐區塊 */
 
