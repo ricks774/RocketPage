@@ -20,419 +20,906 @@
             href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+TC&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="css/layout.css" />
-        <link rel="stylesheet" href="css/components.css" />
         <link rel="stylesheet" href="css/colorStyle.css" />
+        <link rel="stylesheet" href="css/fontStyle.css" />
+        <link rel="stylesheet" href="css/workLayout.css" />
+        <link rel="stylesheet" href="css/workComponents.css" />
     </head>
     <body>
-        <!-- 頂端跑馬燈 -->
-        <div class="container topBar scroll">
-            <div class="marqueeText">
-                Let's join&emsp;- 火箭隊培訓營 Rocket -&emsp;- 共同空間
-                Co-working space -&emsp;Let's join&emsp;- 火箭隊培訓營 Rocket
-                -&emsp;- 共同空間 Co-working space -&emsp;Let's join&emsp;-
-                火箭隊培訓營 Rocket -&emsp;- 共同空間 Co-working space -
+        <header>
+            <!-- 頂端跑馬燈 -->
+            <div class="fixed-top topBar scroll">
+                <div class="marqueeText">
+                    Let's join&emsp;- 火箭隊培訓營 Rocket -&emsp;- 共同空間
+                    Co-working space -&emsp;Let's join&emsp;- 火箭隊培訓營
+                    Rocket -&emsp;- 共同空間 Co-working space -&emsp;Let's
+                    join&emsp;- 火箭隊培訓營 Rocket -&emsp;- 共同空間 Co-working
+                    space -
+                </div>
+                <div class="marqueeText">
+                    Let's join&emsp;- 火箭隊培訓營 Rocket -&emsp;- 共同空間
+                    Co-working space -&emsp;Let's join&emsp;- 火箭隊培訓營
+                    Rocket -&emsp;- 共同空間 Co-working space -&emsp;Let's
+                    join&emsp;- 火箭隊培訓營 Rocket -&emsp;- 共同空間 Co-working
+                    space -
+                </div>
             </div>
-            <div class="marqueeText">
-                Let's join&emsp;- 火箭隊培訓營 Rocket -&emsp;- 共同空間
-                Co-working space -&emsp;Let's join&emsp;- 火箭隊培訓營 Rocket
-                -&emsp;- 共同空間 Co-working space -&emsp;Let's join&emsp;-
-                火箭隊培訓營 Rocket -&emsp;- 共同空間 Co-working space -
-            </div>
-        </div>
-        <!-- 頂端跑馬燈 -->
+            <!-- 頂端跑馬燈 -->
+        </header>
 
-        <div
-            class="row text-center align-items-center justify-content-center pageChoose"
-        >
-            <div class="col-lg-4">
-                <div class="text-center pageArea">
-                    <a href="#about-R" class="pageBox btnType">
-                        <h1 class="pageBtnTitle h1Title">火箭隊</h1>
-                        <span class="pageBtnTitle_eng">Bootcamp Rocket</span>
-                        <img
-                            class="pageIcon_logo"
-                            src="image/banner-logo-rocket-sm.svg"
-                        />
-                        <p class="pageText">
-                            # 軟體工程師培訓營<br /># 全程免費的扎實訓練<br />#
-                            帶你翻轉人生！
-                        </p>
-                        <img
-                            class="pageIcon_logo"
-                            src="image/banner-btn-rocket-lg.svg"
-                        />
+        <!-- 頁面選擇開始 -->
+        <div class="container-fluid chosePage">
+            <div
+                class="row justify-content-center align-items-center pageChoose"
+            >
+                <div class="col-sm-4 pageArea px-4">
+                    <a href="main.html" class="m_hide"
+                        ><div class="card text-center align-items-center br-24">
+                            <h1
+                                class="ns position-absolute top-0 start-50 translate-middle h1-48"
+                            >
+                                火箭隊
+                            </h1>
+                            <span class="js body-24 pageSubTitle mt-5 mb-4"
+                                >Bootcamp Rocket</span
+                            >
+                            <img
+                                src="image/banner-logo-rocket-sm.svg"
+                                class="pageIcon_logo mb-3"
+                                alt="..."
+                            />
+                            <div class="card-body mb-5">
+                                <p class="js body-20 pageCardText">
+                                    # 軟體工程師培訓營<br />#
+                                    全程免費的扎實訓練<br /># 帶你翻轉人生！
+                                </p>
+                                <img
+                                    class="pageIcon_logo position-absolute top-100 start-50 translate-middle"
+                                    src="image/banner-btn-rocket-lg.svg"
+                                />
+                                <div
+                                    class="pageIcon_bg Blue-200 position-absolute top-100 start-50 translate-middle"
+                                ></div>
+                            </div></div
+                    ></a>
+                    <a href="main.html" class="m_show">
+                        <div class="pageCard_m">
+                            <div class="pageArea_m mb-2">
+                                <img
+                                    src="image/banner-logo-rocket-sm.svg"
+                                    class="pageIcon_logo"
+                                    alt="..."
+                                />
+                                <h1 class="ns h1-48">火箭隊</h1>
+                            </div>
+                            <span class="js body-24 pageSubTitle"
+                                >Bootcamp Rocket</span
+                            >
+                            <img
+                                class="position-absolute top-50 start-100 translate-middle"
+                                src="image/banner-btn-rocket-sm.svg"
+                            />
+                            <div
+                                class="pageIcon_bg Blue-200 position-absolute top-50 start-100 translate-middle"
+                            ></div>
+                        </div>
                     </a>
-                    <div class="pageIcon_bg pageIcon_bg_b"></div>
                 </div>
-            </div>
-            <div class="col-lg-1">
-                <h1 class="pageTitle">X</h1>
-            </div>
-            <div class="col-lg-4">
-                <div class="text-center pageArea">
-                    <a href="work.html" class="pageBox btnType">
-                        <h1 class="pageBtnTitle h1Title">共同空間</h1>
-                        <span class="pageBtnTitle_eng">Co-working Space</span>
-                        <img
-                            class="pageIcon_logo"
-                            src="image/banner-logo-coworking-sm.svg"
-                        />
-                        <p class="pageText">
-                            # 超 chill 的共同工作場域<br />#
-                            餅乾、零食、咖啡應有盡有<br />
-                            # 等你來一同交流成長
-                        </p>
-                        <img
-                            class="pageIcon_logo"
-                            src="image/banner-btn-coworking-lg.svg"
-                        />
+                <div class="col-sm-1 ns text-center h1-48 m_hide">X</div>
+                <div class="col-sm-4 pageArea px-4">
+                    <a href="#about" class="m_hide"
+                        ><div
+                            class="card text-center align-items-center position-relative br-24"
+                        >
+                            <h1
+                                class="ns position-absolute top-0 start-50 translate-middle h1-48"
+                            >
+                                共同空間
+                            </h1>
+                            <span class="js body-24 pageSubTitle mt-5 mb-4"
+                                >Co-working Space</span
+                            >
+                            <img
+                                src="image/banner-logo-coworking-lg.svg"
+                                class="pageIcon_logo mb-3"
+                                alt="..."
+                            />
+                            <div class="card-body mb-5">
+                                <p class="js body-20 pageCardText">
+                                    # 超 chill 的共同工作場域<br />#
+                                    餅乾、零食、咖啡應有盡有<br />
+                                    # 等你來一同交流成長
+                                </p>
+                                <img
+                                    class="pageIcon_logo position-absolute top-100 start-50 translate-middle"
+                                    src="image/banner-btn-coworking-lg.svg"
+                                />
+                                <div
+                                    class="pageIcon_bg Violet-200 position-absolute top-100 start-50 translate-middle"
+                                ></div>
+                            </div></div
+                    ></a>
+                    <a href="work.html" class="m_show mt-5 mb-4">
+                        <div class="pageCard_m">
+                            <div class="pageArea_m mb-2">
+                                <img
+                                    src="image/banner-logo-coworking-sm.svg"
+                                    class="pageIcon_logo"
+                                    alt="..."
+                                />
+                                <h1 class="ns h1-48">共同空間</h1>
+                            </div>
+                            <span class="js body-24 pageSubTitle"
+                                >Co-working Space</span
+                            >
+                            <img
+                                class="position-absolute top-50 start-100 translate-middle"
+                                src="image/banner-btn-coworking-sm.svg"
+                            />
+                            <div
+                                class="pageIcon_bg Violet-200 position-absolute top-50 start-100 translate-middle"
+                            ></div>
+                        </div>
                     </a>
-                    <div class="pageIcon_bg pageIcon_bg_p"></div>
                 </div>
             </div>
         </div>
+        <!-- 頁面選擇結束 -->
 
-        <!-- intro 區塊-->
-        <div class="row introArea" id="about-R">
-            <div class="col-lg-6 intro_left">
-                <div class="textArea">
-                    <p class="sedTitle">About Rocket</p>
-                    <h1 class="h1Title">什麼是火箭隊</h1>
-                    <p class="introText">
-                        火箭隊位於高雄的工程師培訓營，針對市場急需的前端、後端工程師與
-                        UI
-                        設計師職缺而設。<b>為期七個月的免費課程</b>，學員全程參與，<b>僅需支付場地費</b>。<br /><br />
-                        火箭隊培育具備問題解決能力的專業人才，滿足企業需求。透過教練的觀察與協助，學員將建立階段性目標，確保技能成長。加入火箭隊，您將獲得實戰經驗，迅速融入職場，並滿足市場對高品質工程師的渴求。
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-6 intro_right">
-                <div class="jobCard">
-                    <div class="jobCard-l">
-                        <div class="jobIntro">
-                            <h3 class="h3Title">前端工程師</h3>
-                            <div class="skills">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JavaScript</p>
+        <!-- 關於開始 -->
+        <div class="container-fluid mapArea Blue-100" id="about">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 align-self-start mt-5">
+                        <div class="mapTextBox mt-5">
+                            <p class="js body-20" style="margin: 0">
+                                About Rocket
+                            </p>
+                            <h1 class="ns h1-48">什麼是火箭隊</h1>
+                            <p class="ns body-20 mapText">
+                                火箭隊位於高雄的工程師培訓營，針對市場急需的前端、後端工程師與
+                                UI
+                                設計師職缺而設。<b>為期七個月的免費課程</b>，學員全程參與，<b>僅需支付場地費</b>。<br /><br />
+                                火箭隊培育具備問題解決能力的專業人才，滿足企業需求。透過教練的觀察與協助，學員將建立階段性目標，確保技能成長。加入火箭隊，您將獲得實戰經驗，迅速融入職場，並滿足市場對高品質工程師的渴求。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-3">
+                        <div class="row introArea my-4">
+                            <div class="col-sm-12">
+                                <!-- 卡片 -->
+                                <div class="card br-24 mt-5 px-4 py-2">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-9">
+                                                <h3 class="card-title ns h3-32">
+                                                    前端工程師
+                                                </h3>
+                                                <div class="skills mt-3">
+                                                    <p>HTML</p>
+                                                    <p>CSS</p>
+                                                    <p>JavaScript</p>
+                                                </div>
+                                                <h6
+                                                    class="card-subtitle js jobSubTitle mt-5 mb-2"
+                                                >
+                                                    Front-end engineer
+                                                </h6>
+                                            </div>
+                                            <div
+                                                class="col-sm-3 d-flex justify-self-end introPic-bg br-24"
+                                            >
+                                                <img
+                                                    src="image/about-rocket-frontend.svg"
+                                                    alt=""
+                                                    class="introPic"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 卡片 -->
                             </div>
-                            <div class="introSpan">Front-end engineer</div>
-                        </div>
-                    </div>
-                    <div class="jobCard-r">
-                        <div class="introPic-bg">
-                            <div class="introPic-f"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="jobCard">
-                    <div class="jobCard-l">
-                        <div class="jobIntro">
-                            <h3 class="h3Title">後端工程師</h3>
-                            <div class="skills">
-                                <p>C#</p>
-                                <p>NET</p>
+                            <div class="col-sm-12">
+                                <!-- 卡片 -->
+                                <div class="card br-24 mt-5 px-4 py-2">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-9">
+                                                <h3 class="card-title ns h3-32">
+                                                    後端工程師
+                                                </h3>
+                                                <div class="skills mt-3">
+                                                    <p>C#</p>
+                                                    <p>.NET</p>
+                                                </div>
+                                                <h6
+                                                    class="card-subtitle js jobSubTitle mt-5 mb-2"
+                                                >
+                                                    Back-end engineer
+                                                </h6>
+                                            </div>
+                                            <div
+                                                class="col-sm-3 d-flex justify-self-end introPic-bg br-24"
+                                            >
+                                                <img
+                                                    src="image/about-rocket-backend.svg"
+                                                    alt=""
+                                                    class="introPic"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 卡片 -->
                             </div>
-                            <div class="introSpan">Back-end engineer</div>
-                        </div>
-                    </div>
-                    <div class="jobCard-r">
-                        <div class="introPic-bg">
-                            <div class="introPic-e"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- intro 區塊-->
-
-        <!-- products 區域 -->
-        <div class="text-center productsArea">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2Title">成功案例</h2>
-                    <div class="productsArt">
-                        <div class="artBox">
-                            <img class="artPic" src="image/case8.png" alt="" />
-                            <img class="artPic" src="image/case1.png" alt="" />
-                            <img class="artPic" src="image/case2.png" alt="" />
-                            <img class="artPic" src="image/case3.png" alt="" />
-                        </div>
-                        <div class="artBox">
-                            <img class="artPic" src="image/case4.png" alt="" />
-                            <img class="artPic" src="image/case5.png" alt="" />
-                            <img class="artPic" src="image/case6.png" alt="" />
-                            <img class="artPic" src="image/case7.png" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- products 區域 -->
-
-        <!-- training 區域 -->
-        <div class="row">
-            <div class="text-center trainingArea">
-                <div class="trainingTitle">
-                    <h2 class="h2Title">關於培訓</h2>
-                </div>
-                <div class="justify-content-center trainingDate">
-                    <div>近期梯次</div>
-                    <div class="line"></div>
-                    <div>
-                        第十三梯 (2023/5/8~2023/11/30) 、第十四梯
-                        (2023/7/31~2024/2/28)、
-                    </div>
-                </div>
-
-                <!-- 前端卡片開始 -->
-                <div class="col-sm-10 card trainingCard">
-                    <div class="card-body">
-                        <div class="trainingName">前端工程師</div>
-                        <div class="trainingInfoArea">
-                            <div class="trainingTextArea">
-                                <div class="trainingContent">
-                                    <h5 class="trCardTitle bodyText2">
-                                        關於前端
-                                    </h5>
-                                    <p class="card-text bodyText3">
-                                        主要專精 JavaScript 前端 (65%)、後端
-                                        (35%) 開發，投入語言為
-                                        HTML、CSS、JavaScript，<b
-                                            class="textHight"
-                                            >適合有一些 HTML、CSS、JS
-                                            基礎的學員報名</b
-                                        >。
-                                    </p>
+                            <div class="col-sm-12">
+                                <!-- 卡片 -->
+                                <div class="card br-24 mt-5 px-4 py-2">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-9">
+                                                <h3 class="card-title ns h3-32">
+                                                    UI 設計師
+                                                </h3>
+                                                <div class="skills mt-3">
+                                                    <p>Figma</p>
+                                                    <p>HTML</p>
+                                                    <p>CSS</p>
+                                                </div>
+                                                <h6
+                                                    class="card-subtitle js jobSubTitle mt-5 mb-2"
+                                                >
+                                                    UI designer
+                                                </h6>
+                                            </div>
+                                            <div
+                                                class="col-sm-3 d-flex justify-self-end introPic-bg br-24"
+                                            >
+                                                <img
+                                                    src="image/about-rocket-ui.svg"
+                                                    alt=""
+                                                    class="introPic"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="trainingContent">
-                                    <h5 class="trCardTitle bodyText2">
-                                        應徵門檻
-                                    </h5>
-                                    <ol class="n bodyText3">
-                                        <li>
-                                            會用 CSS Flexbox 排過網頁，有 RWD
-                                            響應式網頁概念，需提交 CSS
-                                            切版作品，請<b class="textHight"
-                                                >在履歷上需附網頁切版作品</b
-                                            >，Codepen、GitHub Pages 皆可
-                                        </li>
-                                        <li>
-                                            了解
-                                            JS變數、陣列物件、DOM、監聽、AJAX等知識，尚未熟練也沒關係。
-                                        </li>
-                                    </ol>
-                                </div>
-                                <div class="trainingContent">
-                                    <h5 class="trCardTitle bodyText2">
-                                        你會學到
-                                    </h5>
-                                    <ol class="n bodyText3">
-                                        <li>
-                                            網頁切版技能：HTML5、CSS3、SCSS、Bootsrap5、TailwindCSS
-                                        </li>
-                                        <li>
-                                            前端開發技能：JavaScript、TypeScript、ES6、SPA、JS
-                                            plugin 整合、API 介接、NPM
-                                        </li>
-                                        <li>
-                                            後端開發技能：Node.js、MongoDB、heroku、express、JWT
-                                        </li>
-                                        <li>
-                                            JS
-                                            框架：React(Hooks)、Vue3，會依照未來你想投入的公司進行調整
-                                        </li>
-                                        <li>
-                                            程式版控：Git、GitHub、Git Flow
-                                            工作流程
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="trainingImgArea">
-                                <div class="training-bg">
-                                    <img
-                                        src="image/training-img-frontend-lg.png"
-                                        alt=""
-                                    />
-                                </div>
+                                <!-- 卡片 -->
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- 前端卡片結束 -->
-
-                <!-- 後端卡片開始 -->
-                <div class="col-sm-10 card trainingCard">
-                    <div class="card-body">
-                        <div class="trainingName">後端工程師</div>
-                        <div class="trainingInfoArea">
-                            <div class="trainingImgArea">
-                                <div class="training-bg">
-                                    <img
-                                        src="image/training-img-backend-lg.png"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                            <div class="trainingTextArea">
-                                <div class="trainingContent">
-                                    <h5 class="trCardTitle bodyText2">
-                                        關於後端
-                                    </h5>
-                                    <p class="card-text bodyText3">
-                                        後端工程師組主要專注為後端開發，投入後端語言為
-                                        <b class="textHight">
-                                            C#、.Net，適合無程式背景的學員報名</b
-                                        >。
-                                    </p>
-                                </div>
-                                <div class="trainingContent">
-                                    <h5 class="trCardTitle bodyText2">
-                                        你會學到
-                                    </h5>
-                                    <ol class="n bodyText3">
-                                        <li>後端語言：C#</li>
-                                        <li>
-                                            程式架構：ASP.NET Web Form、ASP.NET
-                                            MVC、Web API
-                                        </li>
-                                        <li>
-                                            資料庫與雲端主機：MSSQL、Microsoft
-                                            Azure
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 後端卡片結束 -->
-
-                <!-- UI卡片開始 -->
-                <div class="col-sm-10 card trainingCard">
-                    <div class="card-body">
-                        <div class="trainingName">UI 設計師</div>
-                        <div class="trainingInfoArea">
-                            <div class="trainingTextArea">
-                                <div class="trainingContent">
-                                    <h5 class="trCardTitle bodyText2">
-                                        關於設計
-                                    </h5>
-                                    <p class="card-text bodyText3">
-                                        主要以網頁 UI 設計 50%、網頁前端 50%
-                                        的雙技能樹養成，<b class="textHight"
-                                            >適合具備視覺背景，操作過繪圖軟體尤佳，歡迎無工作經驗的學員報名</b
-                                        >。
-                                    </p>
-                                </div>
-                                <div class="trainingContent">
-                                    <h5 class="trCardTitle bodyText2">
-                                        你會學到
-                                    </h5>
-                                    <ol class="n bodyText3">
-                                        <li>
-                                            網頁前置規劃：Logic
-                                            Flow、Wireframe、網格系統、使用者體驗
-                                        </li>
-                                        <li>
-                                            介面繪製流程：Figma
-                                            操作、Mockup、Prototype、標註文件
-                                        </li>
-                                        <li>
-                                            網頁切版技能：HTML5、CSS、Bootstrap5
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="trainingImgArea">
-                                <div class="training-bg">
-                                    <img
-                                        src="image/training-img-ui-lg.png"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- UI卡片結束 -->
-            </div>
-        </div>
-        <!-- training 區域 -->
-
-        <!-- 教練區開始 -->
-        <div class="row justify-content-center blue-bg Neutral-100">
-            <div class="col-sm-10">
-                <h3 class="h3Title">教練團</h3>
-                <div class="row justify-content-between coachShow">
-                    <div class="col-sm-3 coachBox" autofocus>
-                        <a href="" class="boxBtn coachBtn">
-                            <div class="coachPic coachPic-L"></div>
-                            <div class="coachName">廖 洧 杰</div></a
-                        >
-                    </div>
-                    <div class="col-sm-3 coachBox">
-                        <a href="" class="boxBtn coachBtn">
-                            <div class="coachPic coachPic-Y"></div>
-                            <div class="coachName">穎 旻</div></a
-                        >
-                    </div>
-                    <div class="col-sm-3 coachBox">
-                        <a href="" class="boxBtn coachBtn">
-                            <div class="coachPic coachPic-J"></div>
-                            <div class="coachName">賈 斯 汀</div></a
-                        >
-                    </div>
-                    <div class="col-sm-3 coachBox">
-                        <a href="" class="boxBtn coachBtn">
-                            <div class="coachPic coachPic-C"></div>
-                            <div class="coachName">卡 斯 伯</div></a
-                        >
-                    </div>
-                </div>
-                <div class="coachInfo">
-                    <h3 class="bodyText1">前端教練 | 廖洧杰</h3>
-                    <ul class="coachInfoText">
-                        <li>
-                            2016-2022 過往經歷：六角學院校長、高雄火箭隊前端教練
-                        </li>
-                        <li>
-                            2013-2019 成功案例：協助無資訊背景轉職工程師人數超過
-                            500 位
-                        </li>
-                        <li>
-                            2013-2019 授課人數：線上+線下授課學員超過 25,000 位
-                        </li>
-                        <li>2014-2019 線下授課：高雄大學前端領域兼任講師</li>
-                        <li>
-                            2007-2019 實務經驗：經手超過 100
-                            個實際專案，其領域不乏中小企業、政府專案、銀行系統
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-12 text-center Blue-100 joinBtn">
-                    <h3 class="h3Title">馬上報名!</h3>
                 </div>
             </div>
         </div>
-        <!-- 教練區結束 -->
+        <!-- 關於結束 -->
+
+        <!-- 案例開始 -->
+        <div class="container pb-5">
+            <h2 class="ns h2-36 my-5" style="text-align: center">成功案例</h2>
+            <div class="row align-items-center d-flex flex-nowrap product">
+                <div class="col-sm-3">
+                    <img src="image/case8.png" alt="" />
+                </div>
+                <div class="col-sm-3">
+                    <img src="image/case1.png" alt="" />
+                </div>
+                <div class="col-sm-3">
+                    <img src="image/case2.png" alt="" />
+                </div>
+                <div class="col-sm-3">
+                    <img src="image/case3.png" alt="" />
+                </div>
+            </div>
+            <div class="row d-flex flex-nowrap product mt-4">
+                <div class="col-sm-3">
+                    <img src="image/case4.png" alt="" />
+                </div>
+                <div class="col-sm-3">
+                    <img src="image/case5.png" alt="" />
+                </div>
+                <div class="col-sm-3">
+                    <img src="image/case6.png" alt="" />
+                </div>
+                <div class="col-sm-3">
+                    <img src="image/case7.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <!-- 案例結束 -->
+
+        <!-- 培訓開始 -->
+        <div class="container-fluid position-relative Neutral-100 mt-5">
+            <h2
+                class="ns h2-36 position-absolute top-0 start-50 translate-middle"
+            >
+                關於培訓
+            </h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 my-5">
+                        <div class="ns justify-content-center trainingDate">
+                            <div>近期梯次</div>
+                            <div class="line"></div>
+                            <div>
+                                第十三梯 (2023/5/8~2023/11/30) 、第十四梯
+                                (2023/7/31~2024/2/28)、
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 前端卡片 -->
+                <div class="row justify-content-center mb-5 py-5">
+                    <div class="col-sm-10">
+                        <div class="card-body trainingCard">
+                            <div class="trainingName">前端工程師</div>
+                            <div class="trainingInfoArea">
+                                <div
+                                    class="row justify-content-center align-items-center"
+                                >
+                                    <div class="col-sm-3 training-bg-m">
+                                        <div class="training-bg">
+                                            <img
+                                                src="image/training-img-frontend-lg.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7 py-5">
+                                        <div class="trainingContent">
+                                            <h5
+                                                class="trCardTitle ns body-20 mt-4"
+                                            >
+                                                關於前端
+                                            </h5>
+                                            <p class="js body-16">
+                                                主要專精 JavaScript 前端
+                                                (65%)、後端 (35%)
+                                                開發，投入語言為
+                                                HTML、CSS、JavaScript，<mark
+                                                    class="yellow"
+                                                    ><b class="textHight"
+                                                        >適合有一些
+                                                        HTML、CSS、JS
+                                                        基礎的學員報名</b
+                                                    ></mark
+                                                >。
+                                            </p>
+                                        </div>
+                                        <div class="trainingContent">
+                                            <h5
+                                                class="trCardTitle ns body-20 mt-4"
+                                            >
+                                                應徵門檻
+                                            </h5>
+                                            <ol class="js body-16">
+                                                <li>
+                                                    會用 CSS Flexbox
+                                                    排過網頁，有 RWD
+                                                    響應式網頁概念，需提交 CSS
+                                                    切版作品，請<mark
+                                                        class="yellow"
+                                                        ><b class="textHight"
+                                                            >在履歷上需附網頁切版作品</b
+                                                        ></mark
+                                                    >，Codepen、GitHub Pages
+                                                    皆可
+                                                </li>
+                                                <li>
+                                                    了解
+                                                    JS變數、陣列物件、DOM、監聽、AJAX等知識，尚未熟練也沒關係。
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <div class="trainingContent">
+                                            <h5
+                                                class="trCardTitle ns body-20 mt-4"
+                                            >
+                                                你會學到
+                                            </h5>
+                                            <ol class="js body-16">
+                                                <li>
+                                                    網頁切版技能：HTML5、CSS3、SCSS、Bootsrap5、TailwindCSS
+                                                </li>
+                                                <li>
+                                                    前端開發技能：JavaScript、TypeScript、ES6、SPA、JS
+                                                    plugin 整合、API 介接、NPM
+                                                </li>
+                                                <li>
+                                                    後端開發技能：Node.js、MongoDB、heroku、express、JWT
+                                                </li>
+                                                <li>
+                                                    JS
+                                                    框架：React(Hooks)、Vue3，會依照未來你想投入的公司進行調整
+                                                </li>
+                                                <li>
+                                                    程式版控：Git、GitHub、Git
+                                                    Flow 工作流程
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="training-bg m_hide">
+                                            <img
+                                                src="image/training-img-frontend-lg.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 前端卡片 -->
+
+                <!-- 後端卡片 -->
+                <div class="row justify-content-center mb-5 pb-5">
+                    <div class="col-sm-10">
+                        <div class="card-body trainingCard">
+                            <div class="trainingName">後端工程師</div>
+                            <div class="trainingInfoArea">
+                                <div
+                                    class="row justify-content-center align-items-center"
+                                >
+                                    <div class="col-sm-3 training-bg-m">
+                                        <div class="training-bg">
+                                            <img
+                                                src="image/training-img-backend-lg.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 m_hide">
+                                        <div class="training-bg">
+                                            <img
+                                                src="image/training-img-backend-lg.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7 py-5">
+                                        <div class="trainingContent">
+                                            <h5
+                                                class="trCardTitle ns body-20 mt-4"
+                                            >
+                                                關於後端
+                                            </h5>
+                                            <p class="js body-16">
+                                                後端工程師組主要專注為後端開發，投入後端語言為
+                                                <mark class="yellow"
+                                                    ><b class="textHight">
+                                                        C#、.Net，適合無程式背景的學員報名</b
+                                                    ></mark
+                                                >。
+                                            </p>
+                                        </div>
+                                        <div class="trainingContent">
+                                            <h5
+                                                class="trCardTitle ns body-20 mt-4"
+                                            >
+                                                你會學到
+                                            </h5>
+                                            <ol class="js body-16">
+                                                <li>後端語言：C#</li>
+                                                <li>
+                                                    程式架構：ASP.NET Web
+                                                    Form、ASP.NET MVC、Web API
+                                                </li>
+                                                <li>
+                                                    資料庫與雲端主機：MSSQL、Microsoft
+                                                    Azure
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 後端卡片 -->
+
+                <!-- UI卡片 -->
+                <div class="row justify-content-center pb-5">
+                    <div class="col-sm-10">
+                        <div class="card-body trainingCard">
+                            <div class="trainingName">UI 設計師</div>
+                            <div class="trainingInfoArea">
+                                <div
+                                    class="row justify-content-center align-items-center"
+                                >
+                                    <div class="col-sm-3 training-bg-m">
+                                        <div class="training-bg">
+                                            <img
+                                                src="image/training-img-ui-lg.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7 py-5">
+                                        <div class="trainingContent">
+                                            <h5
+                                                class="trCardTitle ns body-20 mt-4"
+                                            >
+                                                關於設計
+                                            </h5>
+                                            <p class="js body-16">
+                                                主要以網頁 UI 設計
+                                                50%、網頁前端 50%
+                                                的雙技能樹養成，<mark
+                                                    class="yellow"
+                                                    ><b class="textHight"
+                                                        >適合具備視覺背景，操作過繪圖軟體尤佳，歡迎無工作經驗的學員報名</b
+                                                    ></mark
+                                                >。
+                                            </p>
+                                        </div>
+                                        <div class="trainingContent">
+                                            <h5
+                                                class="trCardTitle ns body-20 mt-4"
+                                            >
+                                                你會學到
+                                            </h5>
+                                            <ol class="js body-16">
+                                                <li>
+                                                    網頁前置規劃：Logic
+                                                    Flow、Wireframe、網格系統、使用者體驗
+                                                </li>
+                                                <li>
+                                                    介面繪製流程：Figma
+                                                    操作、Mockup、Prototype、標註文件
+                                                </li>
+                                                <li>
+                                                    網頁切版技能：HTML5、CSS、Bootstrap5
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 m_hide">
+                                        <div class="training-bg">
+                                            <img
+                                                src="image/training-img-ui-lg.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- UI卡片 -->
+
+                <!-- TODO RWD尚未完成 -->
+                <!-- 教練區塊 -->
+                <div class="container mb-5">
+                    <div class="row justify-content-center pb-5 mb-5">
+                        <div class="col-sm-10">
+                            <h3 class="ns h3-32">教練團</h3>
+                            <div class="mt-5">
+                                <ul
+                                    class="nav nav-pills mb-3 coachArea"
+                                    id="pills-tab"
+                                    role="tablist"
+                                >
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link active coachPicArea position-relative me-3"
+                                            id="pills-home-tab"
+                                            data-bs-toggle="pill"
+                                            data-bs-target="#pills-home"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="pills-home"
+                                            aria-selected="true"
+                                        >
+                                            <div class="coachPicBox">
+                                                <img
+                                                    src="image/coach-weijie-4x.png"
+                                                    alt=""
+                                                    class="coachPic"
+                                                />
+                                            </div>
+                                            <p class="js coachName">廖 洧 杰</p>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link coachPicArea position-relative me-3"
+                                            id="pills-profile-tab"
+                                            data-bs-toggle="pill"
+                                            data-bs-target="#pills-profile"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="pills-profile"
+                                            aria-selected="false"
+                                        >
+                                            <div class="coachPicBox">
+                                                <img
+                                                    src="image/coach-yinmin-4x.png"
+                                                    alt=""
+                                                    class="coachPic"
+                                                />
+                                            </div>
+                                            <p class="js coachName">穎 旻</p>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link coachPicArea position-relative me-3"
+                                            id="pills-js-tab"
+                                            data-bs-toggle="pill"
+                                            data-bs-target="#pills-js"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="pills-js"
+                                            aria-selected="false"
+                                        >
+                                            <div class="coachPicBox">
+                                                <img
+                                                    src="image/coach-justin-4x.png"
+                                                    alt=""
+                                                    class="coachPic"
+                                                />
+                                            </div>
+                                            <p class="js coachName">賈 斯 汀</p>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link coachPicArea position-relative"
+                                            id="pills-cs-tab"
+                                            data-bs-toggle="pill"
+                                            data-bs-target="#pills-cs"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="pills-cs"
+                                            aria-selected="false"
+                                        >
+                                            <div class="coachPicBox">
+                                                <img
+                                                    src="image/coach-casper-4x.png"
+                                                    alt=""
+                                                    class="coachPic"
+                                                />
+                                            </div>
+                                            <p class="js coachName">卡 斯 伯</p>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div
+                                        class="tab-pane fade show active"
+                                        id="pills-home"
+                                        role="tabpanel"
+                                        aria-labelledby="pills-home-tab"
+                                    >
+                                        <p class="ns body-24">
+                                            前端教練 | 廖洧杰
+                                        </p>
+                                        <div class="ns ps-3">
+                                            <ul class="coachInfo">
+                                                <li>
+                                                    2016-2022 過往經歷：
+                                                    <a
+                                                        href="https://www.hexschool.com/"
+                                                        >六角學院校長</a
+                                                    >、
+                                                    <a
+                                                        href="https://www.facebook.com/%E7%81%AB%E7%AE%AD%E9%9A%8A%E5%9F%B9%E8%A8%93%E7%87%9F-113926539963626"
+                                                        >高雄火箭隊</a
+                                                    >前端教練
+                                                </li>
+                                                <li>
+                                                    2013-2019
+                                                    成功案例：協助無資訊背景轉職工程師人數超過
+                                                    500 位
+                                                </li>
+                                                <li>
+                                                    2013-2019
+                                                    授課人數：線上+線下授課學員超過
+                                                    25,000 位
+                                                </li>
+                                                <li>
+                                                    2014-2019 線下授課：
+                                                    <a
+                                                        href="https://www.im.nuk.edu.tw/?page_id=95"
+                                                        >高雄大學前端領域兼任講師</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    2007-2019 實務經驗：經手超過
+                                                    100
+                                                    個實際專案，其領域不乏中小企業、政府專案、銀行系統
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="tab-pane fade"
+                                        id="pills-profile"
+                                        role="tabpanel"
+                                        aria-labelledby="pills-profile-tab"
+                                    >
+                                        <p class="ns body-24">
+                                            前端教練 | 穎旻
+                                        </p>
+                                        <div class="ns ps-3">
+                                            <ul class="coachInfo">
+                                                <li>六角學院前端工程師</li>
+                                                <li>六角學院前端講師</li>
+                                                <li>金龍國小教育訓練講師</li>
+                                                <li>國泰產險教育訓練講師</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="tab-pane fade"
+                                        id="pills-js"
+                                        role="tabpanel"
+                                        aria-labelledby="pills-js-tab"
+                                    >
+                                        <p class="ns body-24">
+                                            後端教練 | 賈斯汀
+                                        </p>
+                                        <div class="ns ps-3">
+                                            <ul class="coachInfo">
+                                                <li>
+                                                    高雄市警察局縣市合併內外部整合
+                                                </li>
+                                                <li>
+                                                    嘉義縣警察局全球資訊網與內部知識網
+                                                </li>
+                                                <li>
+                                                    總統府全球資訊網系統維護及開發
+                                                </li>
+                                                <li>
+                                                    總統府 APP
+                                                    新聞即時通系統開發
+                                                </li>
+                                                <li>金管會 EIP SSO 整合</li>
+                                                <li>
+                                                    經濟部工業局電子書包加值應用計畫系統規劃、設計開發
+                                                </li>
+                                                <li>
+                                                    國立海生館活動與報名系統規劃開發
+                                                </li>
+                                                <li>
+                                                    國立海生館海洋教育網規劃開發
+                                                </li>
+                                                <li>
+                                                    台灣淨水器材百科商務平台規劃開發
+                                                </li>
+                                                <li>
+                                                    高雄市小學電子書包試行計畫
+                                                </li>
+                                                <li>
+                                                    屏東國立海生館活動與報名系統
+                                                </li>
+                                                <li>
+                                                    屏東國立海生館海洋教育網
+                                                </li>
+                                                <li>威錦水器材百科補助計畫</li>
+                                                <li>
+                                                    supermediastore（美國購物網站）
+                                                </li>
+                                                <li>高雄捷運網站</li>
+                                                <li>高雄世運志工服務系統</li>
+                                                <li>高雄市 85 大樓招商網</li>
+                                                <li>
+                                                    高雄市國稅局稅務宣導活動網站
+                                                </li>
+                                                <li>
+                                                    高雄市民政局業務資訊化委外作業
+                                                </li>
+                                                <li>高雄市國稅局全球資訊網</li>
+                                                <li>
+                                                    高雄市府衛生局中英全球資訊網
+                                                </li>
+                                                <li>
+                                                    高雄市新聞處圖文影像管理系統
+                                                </li>
+                                                <li>
+                                                    高雄市政府文化局中英文網站
+                                                </li>
+                                                <li>屏東縣政府旅遊網</li>
+                                                <li>屏東縣政府招商網</li>
+                                                <li>行政院南區服務中心網站</li>
+                                                <li>
+                                                    經濟部水利署南區水資源局 105
+                                                    年度業務及全球資訊網站維護及功能擴充計畫
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="tab-pane fade"
+                                        id="pills-cs"
+                                        role="tabpanel"
+                                        aria-labelledby="pills-cs-tab"
+                                    >
+                                        <p class="ns body-24">
+                                            UI 教練 | 卡斯伯
+                                        </p>
+                                        <div class="ns ps-3">
+                                            <ul class="coachInfo">
+                                                <li>
+                                                    2016-2022 過往經歷：
+                                                    <a
+                                                        href="https://www.hexschool.com/"
+                                                        >六角學院</a
+                                                    >共同創辦人
+                                                </li>
+                                                <li>
+                                                    2016-2022 近期授課經驗：
+                                                    <a
+                                                        href="https://www.hexschool.com/courses/vue-training.html"
+                                                        >Vue 3 直播班講師</a
+                                                    >、<a
+                                                        href="https://www.youtube.com/watch?v=qRZLtIcPdls&list=RDCMUC-b2nGm0xLzic38Byti0VjA&start_radio=1"
+                                                        >從 Figma 到
+                                                        VSCode，設計做到網頁切版</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    2013-2016
+                                                    實務經驗：鴻海軟體工程師，設計師轉職前端工程師，擅長將複雜觀念用圖形化方式呈現
+                                                </li>
+                                                <li>六屆 IT 鐵人邦獲選紀錄</li>
+                                                <li>Modern Web 研討會講者</li>
+                                                <li>線上課程超過萬人註冊</li>
+                                                <li>
+                                                    研討會經驗-經驗豐富的技術開發者
+                                                    2017 Modern Web 技術講者
+                                                </li>
+                                                <li>
+                                                    2021 {Laravel x Vue} Conf
+                                                    技術講者
+                                                </li>
+                                                <li>五屆 IT 鐵人賽優選</li>
+                                                <li>技術 Blog - 卡斯伯</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="row justify-content-center text-center position-relative"
+                    >
+                        <div class="col-sm-10">
+                            <a
+                                href=""
+                                class="Blue-100 position-absolute top-100 start-50 translate-middle joinBtn py-4"
+                            >
+                                <h3 class="ns h3-32">馬上報名！</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 教練區塊 -->
+            </div>
+        </div>
+        <!-- 培訓結束 -->
 
         <!-- QA開始 -->
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 qaArea">
+            <div class="row justify-content-center mb-5">
+                <div class="col-sm-10 mt-5">
                     <div class="card-body qaCard">
-                        <h3 class="h3Title">培訓費用</h3>
+                        <h3 class="ns h3-32">培訓費用</h3>
                         <div class="cutLine"></div>
                         <div class="qaBox">
-                            <div class="col-lg-1 qaIcon icon1"></div>
-                            <div class="col-lg-11 qaTextBox">
-                                <div class="bodyText1 qaBoxTitle">
+                            <div class="col-sm-1 qaIcon icon1"></div>
+                            <div class="col-sm-10 qaTextBox">
+                                <div class="body-16 qaBoxTitle">
                                     Q：請問參加培訓需要費用嗎？
                                 </div>
-                                <p class="bodyText3 qaBoxText">
+                                <p class="body-16 qaBoxText">
                                     A：不會有任何費用，僅需要場地費 ( $1,200 /
                                     Month )，其餘完全免費。
                                 </p>
@@ -440,24 +927,24 @@
                         </div>
                         <div class="cutLine"></div>
                         <div class="qaBox">
-                            <div class="col-lg-1 qaIcon icon2"></div>
-                            <div class="col-lg-11 qaTextBox">
+                            <div class="col-sm-1 qaIcon icon2"></div>
+                            <div class="col-sm-11 qaTextBox">
                                 <div class="bodyText1 qaBoxTitle">
                                     Q：你們不是直銷吧？
                                 </div>
-                                <p class="bodyText3 qaBoxText">
+                                <p class="body-16 qaBoxText">
                                     A：不是，不會推銷任何東西。
                                 </p>
                             </div>
                         </div>
                         <div class="cutLine"></div>
                         <div class="qaBox">
-                            <div class="col-lg-1 qaIcon icon3"></div>
-                            <div class="col-lg-11 qaTextBox">
+                            <div class="col-sm-1 qaIcon icon3"></div>
+                            <div class="col-sm-11 qaTextBox">
                                 <div class="bodyText1 qaBoxTitle">
                                     Q：你們真的不是詐騙集團？台灣有其他單位做一樣的事了嗎？
                                 </div>
-                                <p class="bodyText3 qaBoxText">
+                                <p class="body-16 qaBoxText">
                                     A：其實在台灣已經有許多單位在做一樣的事了，但絕大部分都在中北部，例如
                                     <a href="" class="btLineBtn"
                                         >AppWorks School</a
@@ -476,12 +963,12 @@
                         <h3 class="h3Title">培訓流程</h3>
                         <div class="cutLine"></div>
                         <div class="qaBox">
-                            <div class="col-lg-1 qaIcon icon1"></div>
-                            <div class="col-lg-11 qaTextBox">
+                            <div class="col-sm-1 qaIcon icon1"></div>
+                            <div class="col-sm-11 qaTextBox">
                                 <div class="bodyText1 qaBoxTitle">
                                     Q：那培訓的時間是多久呢？
                                 </div>
-                                <p class="bodyText3 qaBoxText">
+                                <p class="body-16 qaBoxText">
                                     A：培訓時間為七個月，您可以選擇要投入前端工程師、後端工程師或
                                     UI 設計師。
                                 </p>
@@ -489,36 +976,36 @@
                         </div>
                         <div class="cutLine"></div>
                         <div class="qaBox">
-                            <div class="col-lg-1 qaIcon icon2"></div>
-                            <div class="col-lg-11 qaTextBox">
+                            <div class="col-sm-1 qaIcon icon2"></div>
+                            <div class="col-sm-11 qaTextBox">
                                 <div class="bodyText1 qaBoxTitle">
                                     Q：那如果七個月後，可以續留嗎？
                                 </div>
-                                <p class="bodyText3 qaBoxText">
+                                <p class="body-16 qaBoxText">
                                     A：當然可以，我們提供額外的進駐空間供您使用。在這裡，您可以與其他火箭隊夥伴保持緊密交流，分享心得，或者利用此空間接案和進行遠端工作，讓您的技能不斷精進。
                                 </p>
                             </div>
                         </div>
                         <div class="cutLine"></div>
                         <div class="qaBox">
-                            <div class="col-lg-1 qaIcon icon3"></div>
-                            <div class="col-lg-11 qaTextBox">
+                            <div class="col-sm-1 qaIcon icon3"></div>
+                            <div class="col-sm-11 qaTextBox">
                                 <div class="bodyText1 qaBoxTitle">
                                     Q：你們和其他的培訓單位有什麼差異呢？
                                 </div>
-                                <p class="bodyText3 qaBoxText">
+                                <p class="body-16 qaBoxText">
                                     A：我們的培訓流程，主要是將學員培育成「擁有自我解決問題的工程師」，大部分的實體補習班都會給您一個完整課綱，您照著它走完就結束。但是不論任何工作，出社會才會發現，有很多事情都還是自己不懂的，您必須了解該如何找出問題癥結點，並解決問題。讓您有足夠的搜索與研究能力，自行打造火箭，航向您想去的星球。
                                 </p>
                             </div>
                         </div>
                         <div class="cutLine"></div>
                         <div class="qaBox">
-                            <div class="col-lg-1 qaIcon icon4"></div>
-                            <div class="col-lg-11 qaTextBox">
+                            <div class="col-sm-1 qaIcon icon4"></div>
+                            <div class="col-sm-11 qaTextBox">
                                 <div class="bodyText1 qaBoxTitle">
                                     Q：這麼說來，你們沒有一個完整課綱？
                                 </div>
-                                <p class="bodyText3 qaBoxText">
+                                <p class="body-16 qaBoxText">
                                     A：是的，我們只會針對您當下的狀態，並觀察您需要什麼養分，提供給您「目標」，您再依照此目標去達成，而我們也會從您研究的過程中，觀察您還需要哪些技術，以達到其目標。舉例來說，您對
                                     web layout
                                     沒有從零到有的開發經驗，那教練就陪您跑過整個流程，甚至模擬自己是業主，與您討論網站建構流程。或是後端您沒有自己架過郵件伺服器，那教練就會給您建立一個最小可行性的郵件服務，以達成目標。
@@ -527,12 +1014,12 @@
                         </div>
                         <div class="cutLine"></div>
                         <div class="qaBox">
-                            <div class="col-lg-1 qaIcon icon5"></div>
-                            <div class="col-lg-11 qaTextBox">
+                            <div class="col-sm-1 qaIcon icon5"></div>
+                            <div class="col-sm-11 qaTextBox">
                                 <div class="bodyText1 qaBoxTitle">
                                     Q：所以有很多的時間都是在自我研究技術？
                                 </div>
-                                <p class="bodyText3 qaBoxText">
+                                <p class="body-16 qaBoxText">
                                     A：是的，沒有錯，教練的存在是觀察您目前的狀態，並與您共同建立各階段性的目標，確保您方向沒有走歪，能順遂朝自己的方向邁進。
                                 </p>
                             </div>
@@ -545,95 +1032,103 @@
         <!-- QA結束 -->
 
         <!-- 協助單位開始 -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 assistArea Neutral-200">
-                    <h3 class="h3Title assistAreaTitle">主辦、協辦單位</h3>
-                    <div class="overflow: scroll assistScroll">
-                        <div class="card assistCard">
-                            <div class="assistCardImg-bg">
-                                <img
-                                    src="image/organizer-rocket-lg.png"
-                                    class="card-img-top assistCardImg"
-                                    alt="..."
-                                />
+        <div class="container-fluid Neutral-200">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 position-relative">
+                        <h3 class="ns h3-32 assistTitle">主辦、協辦單位</h3>
+                        <div class="row d-flex flex-nowrap scroll-x">
+                            <div class="col-sm-2 my-3 assistBox_m">
+                                <div class="assistCardImg-bg mt-5">
+                                    <img
+                                        src="image/organizer-rocket-lg.png"
+                                        class="card-img-top assistCardImg"
+                                        alt="..."
+                                    />
+                                </div>
+                                <p class="ns body-16 mt-2 mb-0 assistUnit">
+                                    主辦單位
+                                </p>
+                                <p class="ns body-16 mt-1">火箭隊</p>
                             </div>
-                            <p class="bodyText3 assistCardTitle">主辦單位</p>
-                            <p class="bodyText3 assistCardText">火箭隊</p>
-                        </div>
-                        <div class="card assistCard">
-                            <div class="assistCardImg-bg">
-                                <img
-                                    src="image/organizer-hexschool-lg.png"
-                                    class="card-img-top assistCardImg"
-                                    alt="..."
-                                />
+                            <div class="col-sm-2 my-3 assistBox_m">
+                                <div class="assistCardImg-bg mt-5">
+                                    <img
+                                        src="image/organizer-hexschool-lg.png"
+                                        class="card-img-top assistCardImg"
+                                        alt="..."
+                                    />
+                                </div>
+                                <p class="ns body-16 mt-2 mb-0 assistUnit">
+                                    協辦單位
+                                </p>
+                                <p class="ns body-16 mt-1">六角學院</p>
                             </div>
-                            <p class="bodyText3 assistCardTitle">協辦單位</p>
-                            <p class="bodyText3 assistCardText">六角學院</p>
-                        </div>
-                        <div class="card assistCard">
-                            <div class="assistCardImg-bg">
-                                <img
-                                    src="image/organizer-goodidea-lg.png"
-                                    class="card-img-top assistCardImg"
-                                    alt="..."
-                                />
+                            <div class="col-sm-2 my-3 assistBox_m">
+                                <div class="assistCardImg-bg mt-5">
+                                    <img
+                                        src="image/organizer-goodidea-lg.png"
+                                        class="card-img-top assistCardImg"
+                                        alt="..."
+                                    />
+                                </div>
+                                <p class="ns body-16 mt-2 mb-0 assistUnit">
+                                    協辦單位
+                                </p>
+                                <p class="ns body-16 mt-1">好想工作室</p>
                             </div>
-                            <p class="bodyText3 assistCardTitle">協辦單位</p>
-                            <p class="bodyText3 assistCardText">好想工作室</p>
-                        </div>
-                        <div class="card assistCard">
-                            <div class="assistCardImg-bg">
-                                <img
-                                    src="image/organizer-kdan-lg.png"
-                                    class="card-img-top assistCardImg"
-                                    alt="..."
-                                />
+                            <div class="col-sm-2 my-3 assistBox_m">
+                                <div class="assistCardImg-bg mt-5">
+                                    <img
+                                        src="image/organizer-kdan-lg.png"
+                                        class="card-img-top assistCardImg"
+                                        alt="..."
+                                    />
+                                </div>
+                                <p class="ns body-16 mt-2 mb-0 assistUnit">
+                                    合作招募廠商
+                                </p>
+                                <p class="ns body-16 mt-1">凱鈿科技</p>
                             </div>
-                            <p class="bodyText3 assistCardTitle">
-                                合作招募廠商
-                            </p>
-                            <p class="bodyText3 assistCardText">凱鈿科技</p>
-                        </div>
-                        <div class="card assistCard">
-                            <div class="assistCardImg-bg">
-                                <img
-                                    src="image/organizer-titan-lg.pg.png"
-                                    class="card-img-top assistCardImg"
-                                    alt="..."
-                                />
+                            <div class="col-sm-2 my-3 assistBox_m">
+                                <div class="assistCardImg-bg mt-5">
+                                    <img
+                                        src="image/organizer-titan-lg.pg.png"
+                                        class="card-img-top assistCardImg"
+                                        alt="..."
+                                    />
+                                </div>
+                                <p class="ns body-16 mt-2 mb-0 assistUnit">
+                                    合作招募廠商
+                                </p>
+                                <p class="ns body-16 mt-1">鈦坦科技</p>
                             </div>
-                            <p class="bodyText3 assistCardTitle">
-                                合作招募廠商
-                            </p>
-                            <p class="bodyText3 assistCardText">鈦坦科技</p>
-                        </div>
-                        <div class="card assistCard">
-                            <div class="assistCardImg-bg">
-                                <img
-                                    src="image/organizer-skw-lg.png"
-                                    class="card-img-top assistCardImg"
-                                    alt="..."
-                                />
+                            <div class="col-sm-2 my-3 assistBox_m">
+                                <div class="assistCardImg-bg mt-5">
+                                    <img
+                                        src="image/organizer-skw-lg.png"
+                                        class="card-img-top assistCardImg"
+                                        alt="..."
+                                    />
+                                </div>
+                                <p class="ns body-16 mt-2 mb-0 assistUnit">
+                                    合作招募廠商
+                                </p>
+                                <p class="ns body-16 mt-1">坂和企業</p>
                             </div>
-                            <p class="bodyText3 assistCardTitle">
-                                合作招募廠商
-                            </p>
-                            <p class="bodyText3 assistCardText">坂和企業</p>
-                        </div>
-                        <div class="card assistCard">
-                            <div class="assistCardImg-bg">
-                                <img
-                                    src="image/organizer-wistron-lg.png"
-                                    class="card-img-top assistCardImg"
-                                    alt="..."
-                                />
+                            <div class="col-sm-2 my-3 assistBox_m">
+                                <div class="assistCardImg-bg mt-5">
+                                    <img
+                                        src="image/organizer-wistron-lg.png"
+                                        class="card-img-top assistCardImg"
+                                        alt="..."
+                                    />
+                                </div>
+                                <p class="ns body-16 mt-2 mb-0 assistUnit">
+                                    合作招募廠商
+                                </p>
+                                <p class="ns body-16 mt-1">緯創資通</p>
                             </div>
-                            <p class="bodyText3 assistCardTitle">
-                                合作招募廠商
-                            </p>
-                            <p class="bodyText3 assistCardText">緯創資通</p>
                         </div>
                     </div>
                 </div>
@@ -645,16 +1140,21 @@
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col text-center footerArea">
-                        <span class="bodyText3"
+                    <div class="col text-center footerArea m_hide">
+                        <span class="js body-16 footerText"
                             >Copyright © 2023 - Created by 六角學院 /
                             火箭隊培訓營</span
+                        >
+                    </div>
+                    <div class="col text-center footerArea footerArea_m">
+                        <span class="js body-16 footerText"
+                            >Copyright © 2023<br />
+                            - Created by 六角學院 / 火箭隊培訓營</span
                         >
                     </div>
                 </div>
             </div>
         </footer>
-
         <!-- 底部區塊結束 -->
     </body>
     <script
