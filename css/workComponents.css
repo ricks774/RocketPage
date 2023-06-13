@@ -1,623 +1,623 @@
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 /* *跑馬燈 */
 .topBar {
-    height: 64px;
-    display: flex;
-    align-items: center;
-    background: #ffffff;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
 }
 .marqueeText {
-    font-family: "Josefin Sans";
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.08em;
-    display: inline-block;
-    white-space: nowrap;
-    text-transform: uppercase;
-    animation: scroll 40s linear infinite;
-    &:nth-child(2) {
-        animation: scroll2 40s linear infinite;
-        animation-delay: -20s;
-    }
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.08em;
+  display: inline-block;
+  white-space: nowrap;
+  text-transform: uppercase;
+  animation: scroll 40s linear infinite;
+  &:nth-child(2) {
+    animation: scroll2 40s linear infinite;
+    animation-delay: -20s;
+  }
 }
 
 @keyframes scroll {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 @keyframes scroll2 {
-    from {
-        transform: translateX(0%);
-    }
-    to {
-        transform: translateX(-200%);
-    }
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
 }
 /* *跑馬燈 */
 
 .testBox {
-    width: 440px;
-    height: 448px;
-    background: #ffffff;
-    border: 2px solid #e0e0e0;
-    border-radius: 24px;
+  width: 440px;
+  height: 448px;
+  background: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 24px;
 }
 
 /* - 頁面元件 */
 .pageArea {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 .pageArea:hover {
-    transform: translateY(-16px);
+  transform: translateY(-16px);
 }
 .pageIcon_logo {
-    height: 100px;
-    width: 100px;
+  height: 100px;
+  width: 100px;
 }
 .intImg {
-    height: 100px;
-    width: 100px;
+  height: 100px;
+  width: 100px;
 }
 .pageIcon_bg {
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
-    z-index: -1;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  z-index: -1;
 }
 
 @media (max-width: 428px) {
-    .pageCard_m {
-        /* background: paleturquoise; */
-        background: #ffffff;
-        width: 90%;
-        border: 2px solid #e0e0e0;
-        border-radius: 16px;
-        padding: 24px;
-        position: relative;
-    }
-    .pageArea_m {
-        display: flex;
-        align-items: center;
-    }
-    .pageArea_m h1 {
-        margin: 0;
-    }
-    .pageIcon_logo {
-        width: 48px;
-        height: 48px;
-        margin-right: 8px;
-    }
-    .pageIcon_bg {
-        height: 80px;
-        width: 80px;
-    }
+  .pageCard_m {
+    /* background: paleturquoise; */
+    background: #ffffff;
+    width: 90%;
+    border: 2px solid #e0e0e0;
+    border-radius: 16px;
+    padding: 24px;
+    position: relative;
+  }
+  .pageArea_m {
+    display: flex;
+    align-items: center;
+  }
+  .pageArea_m h1 {
+    margin: 0;
+  }
+  .pageIcon_logo {
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+  }
+  .pageIcon_bg {
+    height: 80px;
+    width: 80px;
+  }
 }
 /* - 頁面元件 */
 
 /* - 介紹元件 */
 .skills > p {
-    font-family: "Josefin Sans";
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #7f94e2;
-    border: 3px solid #7f94e2;
-    border-radius: 30px;
-    padding: 6px 20px;
-    margin-right: 10px;
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #7f94e2;
+  border: 3px solid #7f94e2;
+  border-radius: 30px;
+  padding: 6px 20px;
+  margin-right: 10px;
 }
 
 .introPic-bg {
-    background-color: #f0f0f0;
-    position: relative;
+  background-color: #f0f0f0;
+  position: relative;
 }
 .introPic {
-    position: absolute;
-    max-width: 100%;
-    height: auto;
-    left: -30%;
-    bottom: 20%;
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  left: -30%;
+  bottom: 20%;
 }
 
 @media (max-width: 428px) {
-    .mapTextBox {
-        width: 100% !important;
-    }
-    .skills > p {
-        font-size: 12px;
-    }
-    .jobSubTitle {
-        font-size: 20px;
-        margin: 0 !important;
-    }
-    .introPic-bg {
-        height: 60px;
-        border-radius: 12px;
-        margin-top: 40%;
-    }
-    .introPic {
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+  .mapTextBox {
+    width: 100% !important;
+  }
+  .skills > p {
+    font-size: 12px;
+  }
+  .jobSubTitle {
+    font-size: 20px;
+    margin: 0 !important;
+  }
+  .introPic-bg {
+    height: 60px;
+    border-radius: 12px;
+    margin-top: 40%;
+  }
+  .introPic {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 /* - 介紹元件 */
 
 /* - 案例元件 */
 
 .product {
-    white-space: nowrap;
-    overflow-x: auto;
-    padding-left: 10%;
+  white-space: nowrap;
+  overflow-x: auto;
+  padding-left: 10%;
 }
 .product::-webkit-scrollbar {
-    width: 0;
+  width: 0;
 }
 /* - 案例元件 */
 
 /* - 培訓元件 */
 .trainingDate {
-    background: #ffffff;
-    box-shadow: 0px 2px 4px #e8e8e8;
-    border-radius: 50px;
-    display: flex;
-    padding: 17px 24px;
-    white-space: nowrap;
-    font-weight: 500;
-    font-size: 16px;
-    overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px #e8e8e8;
+  border-radius: 50px;
+  display: flex;
+  padding: 17px 24px;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 16px;
+  overflow: hidden;
 }
 .line {
-    border: 2px solid #f0f0f0;
-    transform: rotate(180deg);
-    margin: 0 12px;
+  border: 2px solid #f0f0f0;
+  transform: rotate(180deg);
+  margin: 0 12px;
 }
 
 .trainingCard {
-    background: #ffffff;
-    background-size: 20%;
-    border: 2px solid #f0f0f0;
-    border-radius: 16px;
-    /* margin: 40px 0; */
-    position: relative;
-    background-image: url("../image/training-bg.png");
+  background: #ffffff;
+  background-size: 20%;
+  border: 2px solid #f0f0f0;
+  border-radius: 16px;
+  /* margin: 40px 0; */
+  position: relative;
+  background-image: url("../image/training-bg.png");
 }
 .trainingName {
-    position: absolute;
-    padding: 12px 40px;
-    background: #ffffff;
-    border: 2px solid #363636;
-    border-radius: 12px;
-    font-family: "Noto Sans TC";
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 150%;
-    left: 40px;
-    top: -32px;
-    box-shadow: 5px 5px 0px rgba(0, 0, 0);
+  position: absolute;
+  padding: 12px 40px;
+  background: #ffffff;
+  border: 2px solid #363636;
+  border-radius: 12px;
+  font-family: "Noto Sans TC";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  left: 40px;
+  top: -32px;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0);
 }
 .trCardTitle {
-    display: inline-block;
-    border-bottom: 4px solid #363636;
-    margin-bottom: 16px;
+  display: inline-block;
+  border-bottom: 4px solid #363636;
+  margin-bottom: 16px;
 }
 .training-bg-m {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 428px) {
-    .trainingDate {
-        font-size: 14px;
-        box-shadow: 0px 2px 4px #e8e8e8;
-        border-radius: 50px;
-        justify-content: flex-start !important;
-    }
-    .trainingName {
-        font-size: 20px;
-        padding: 12px 20px;
-    }
-    .training-bg-m {
-        display: block;
-        margin-top: 15%;
-        padding-left: 12%;
-    }
-    .trainingContent {
-        padding: 0 10%;
-    }
+  .trainingDate {
+    font-size: 14px;
+    box-shadow: 0px 2px 4px #e8e8e8;
+    border-radius: 50px;
+    justify-content: flex-start !important;
+  }
+  .trainingName {
+    font-size: 20px;
+    padding: 12px 20px;
+  }
+  .training-bg-m {
+    display: block;
+    margin-top: 15%;
+    padding-left: 12%;
+  }
+  .trainingContent {
+    padding: 0 10%;
+  }
 }
 
 /* - 培訓元件 */
 
 /* - 教練元件 */
 .coachPicArea {
-    background-color: #ffffff;
-    border: 2px solid #363636;
-    border-radius: 16px;
-    width: 251px;
-    height: 160px;
-    position: relative;
+  background-color: #ffffff;
+  border: 2px solid #363636;
+  border-radius: 16px;
+  width: 251px;
+  height: 160px;
+  position: relative;
 }
 .coachPicBox {
-    height: 180px;
-    width: 180px;
-    bottom: 0;
-    left: 0;
-    position: absolute;
+  height: 180px;
+  width: 180px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
 }
 .coachPic {
-    /* position: absolute;
+  /* position: absolute;
     bottom: 0;
     left: 0;
     object-fit: cover; */
-    position: absolute;
-    max-width: 100%;
-    max-height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 .coachArea {
-    padding-top: 3%;
-    overflow-x: scroll;
+  padding-top: 3%;
+  overflow-x: scroll;
 }
 .coachArea::-webkit-scrollbar {
-    width: 0;
+  width: 0;
 }
 .coachName {
-    color: #363636;
-    background: #ffffff;
-    border: 2px solid #363636;
-    border-radius: 12px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    letter-spacing: 0.02em;
-    position: absolute;
-    writing-mode: vertical-lr;
-    padding: 20px 13px 20px 10px;
-    top: -20%;
-    right: 0;
-    box-shadow: 3px 3px 0px rgba(0, 0, 0);
-    transition: transform 0.3s ease;
+  color: #363636;
+  background: #ffffff;
+  border: 2px solid #363636;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  position: absolute;
+  writing-mode: vertical-lr;
+  padding: 20px 13px 20px 10px;
+  top: -20%;
+  right: 0;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0);
+  transition: transform 0.3s ease;
 }
 .coachPicArea:hover .coachName {
-    transform: translateY(-16px);
+  transform: translateY(-16px);
 }
 .nav-link.active {
-    background-color: #e6ebff !important;
+  background-color: #e6ebff !important;
 }
 .joinBtn {
-    width: 83%;
-    border: 2px solid #363636;
-    border-radius: 16px;
+  width: 83%;
+  border: 2px solid #363636;
+  border-radius: 16px;
 }
 .joinBtn h3 {
-    transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
 .joinBtn:hover h3 {
-    transform: translateX(-5%);
+  transform: translateX(-5%);
 }
 
 @media (max-width: 428px) {
-    .coachPicArea {
-        max-width: 332px;
-        max-height: 200px;
-        border-radius: 24px !important;
-    }
-    .coachPicBox {
-        width: 220px;
-        height: 220px;
-    }
-    .coachArea {
-        overflow-x: scroll;
-        padding-top: 20%;
-    }
+  .coachPicArea {
+    max-width: 332px;
+    max-height: 200px;
+    border-radius: 24px !important;
+  }
+  .coachPicBox {
+    width: 220px;
+    height: 220px;
+  }
+  .coachArea {
+    overflow-x: scroll;
+    padding-top: 20%;
+  }
 }
 
 /* - 教練元件 */
 
 /* - QA元件 */
 .cutLine {
-    background: #f7f7f7;
-    width: 100%;
-    height: 2px;
-    margin: 20px 0;
+  background: #f7f7f7;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
 }
 .qaBox {
-    display: flex;
+  display: flex;
 }
 .qaTextBox {
-    width: 80%;
-    /* padding: 0 5%; */
+  width: 80%;
+  /* padding: 0 5%; */
 }
 .qaBoxTitle {
-    margin-bottom: 8px;
-    font-weight: 700;
+  margin-bottom: 8px;
+  font-weight: 700;
 }
 .qaBoxText {
-    font-weight: 500;
+  font-weight: 500;
 }
 .qaIcon {
-    height: 24px;
-    width: 24px;
-    margin: 0 32px;
+  height: 24px;
+  width: 24px;
+  margin: 0 32px;
 }
 
 .icon1 {
-    background-image: url(../image/ic-no.1-lg.svg);
+  background-image: url(../image/ic-no.1-lg.svg);
 }
 .icon2 {
-    background-image: url(../image/ic-no.2-lg.svg);
+  background-image: url(../image/ic-no.2-lg.svg);
 }
 .icon3 {
-    background-image: url(../image/ic-no.3-lg.svg);
+  background-image: url(../image/ic-no.3-lg.svg);
 }
 .icon4 {
-    background-image: url(../image/ic-no.4-lg.svg);
+  background-image: url(../image/ic-no.4-lg.svg);
 }
 .icon5 {
-    background-image: url(../image/ic-no.5-lg.svg);
+  background-image: url(../image/ic-no.5-lg.svg);
 }
 
 @media (max-width: 428px) {
-    .qaTextBox {
-        width: 70%;
-        padding: 0 2%;
-    }
+  .qaTextBox {
+    width: 70%;
+    padding: 0 2%;
+  }
 }
 /* - QA元件 */
 
 /* - 協助單位元件 */
 .assistCardImg-bg {
-    background: #ffffff;
-    border-radius: 12px;
-    width: 196px;
-    height: 148px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: #ffffff;
+  border-radius: 12px;
+  width: 196px;
+  height: 148px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .assistCardImg {
-    max-width: 60%;
-    max-height: 60%;
-    object-fit: contain;
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
 }
 .assistTitle {
-    position: absolute;
-    top: -8%;
-    left: 0;
+  position: absolute;
+  top: -8%;
+  left: 0;
 }
 
 @media (max-width: 1024px) {
-    .assistCardImg-bg {
-        width: 156px;
-        height: 120px;
-    }
-    .assistBox_m {
-        width: 30%;
-    }
+  .assistCardImg-bg {
+    width: 156px;
+    height: 120px;
+  }
+  .assistBox_m {
+    width: 30%;
+  }
 }
 
 @media (max-width: 428px) {
-    .assistCardImg-bg {
-        width: 156px;
-        height: 120px;
-    }
-    .assistBox_m {
-        width: 50%;
-    }
+  .assistCardImg-bg {
+    width: 156px;
+    height: 120px;
+  }
+  .assistBox_m {
+    width: 50%;
+  }
 }
 /* - 協助單位元件 */
 
 /* - 地圖區塊 */
 .mapFrame {
-    width: 610px;
-    height: 390px;
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 12px;
+  width: 610px;
+  height: 390px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 12px;
 }
 
 @media (max-width: 428px) {
-    .mapArea {
-        border-radius: 24px;
-    }
-    .mapFrame {
-        width: 332px;
-        height: 332px;
-        border-radius: 12px;
-    }
+  .mapArea {
+    border-radius: 24px;
+  }
+  .mapFrame {
+    width: 332px;
+    height: 332px;
+    border-radius: 12px;
+  }
 }
 /* - 地圖區塊 */
 
 /* - 場域區塊 */
 .serviceIcon {
-    width: 120px;
-    height: 120px;
+  width: 120px;
+  height: 120px;
 }
 .hdPic {
-    border: 2px solid #cdcdcd;
-    border-radius: 16px;
-    padding: 1%;
+  border: 2px solid #cdcdcd;
+  border-radius: 16px;
+  padding: 1%;
 }
 
 .scroll-x {
-    white-space: nowrap;
-    overflow-x: auto;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 .scroll-x::-webkit-scrollbar {
-    width: 0;
+  width: 0;
 }
 .scrollPic {
-    display: inline-block;
-    white-space: nowrap;
-    animation: scroll-x 13s linear infinite;
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-x 13s linear infinite;
 }
 
 .scrollPic img {
-    margin-right: 20px;
+  margin-right: 20px;
 }
+/* * 照片跑馬燈 */
 @keyframes scroll-x {
-    0%,
-    20% {
-        transform: translateX(0%);
-    }
-    25%,
-    45% {
-        transform: translateX(-50%);
-    }
-    50%,
-    75% {
-        transform: translateX(-150%);
-    }
-    80%,
-    100% {
-        transform: translateX(-248%);
-    }
+  0%,
+  20% {
+    transform: translateX(0%);
+  }
+  25%,
+  45% {
+    transform: translateX(-50%);
+  }
+  50%,
+  75% {
+    transform: translateX(-150%);
+  }
+  80%,
+  100% {
+    transform: translateX(-248%);
+  }
 }
+/* * 照片跑馬燈 */
 
 @media (max-width: 428px) {
-    .placeArea {
-        padding: 0 10%;
-    }
-    .tagTitle {
-        font-size: 20px;
-        margin-bottom: 2% !important;
-    }
+  .placeArea {
+    padding: 0 10%;
+  }
+  .tagTitle {
+    font-size: 20px;
+    margin-bottom: 2% !important;
+  }
 }
 /* - 場域區塊 */
 
 /* - 進駐區塊 */
 .enterPrice {
-    display: inline-block;
-    padding: 40px;
+  display: inline-block;
+  padding: 40px;
 }
 
 .priceImg-container {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .priceSpan {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-    margin-bottom: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
 }
 .enterCard {
-    max-width: 526px;
-    transition: border-color 0.3s ease;
+  max-width: 526px;
+  transition: border-color 0.3s ease;
 }
 .enterCard:hover {
-    border: 2px solid #363636;
+  border: 2px solid #363636;
 }
 .enterCardTextBox {
-    display: flex;
-    align-items: center;
-    margin: 8px 0;
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
 }
 .enterForm {
-    border: 2px solid #363636;
+  border: 2px solid #363636;
 }
 .enterFormTitle {
-    transition: transform 0.3s ease-out;
-    margin: 0;
+  transition: transform 0.3s ease-out;
+  margin: 0;
 }
 
 .hiddenDiv {
-    transition: transform 0.3s ease;
-    display: none;
+  transition: transform 0.3s ease;
+  display: none;
 }
 .enterFormBox {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .enterFormBox:hover .hiddenDiv {
-    display: block;
-    opacity: 1;
+  display: block;
+  opacity: 1;
 }
 .enterFormBox:hover .enterFormTitle {
-    transform: translateX(-14px);
+  transform: translateX(-14px);
 }
 .enterArea::-webkit-scrollbar {
-    width: 0;
+  width: 0;
 }
 @media (max-width: 428px) {
-    .hdTitle {
-        margin: 4% 0 !important;
-    }
-    .hdText {
-        margin-bottom: 10%;
-    }
-    .serviceBox {
-        display: flex;
-        text-align: left;
-    }
-    .serviceIcon {
-        width: 48px;
-        height: 48px;
-        margin-right: 16px;
-    }
-    .serviceTitle {
-        margin: 0 !important;
-        font-size: 16px;
-    }
-    .serviceText {
-        margin: 0 !important;
-    }
-    .enterArea {
-    }
+  .hdTitle {
+    margin: 4% 0 !important;
+  }
+  .hdText {
+    margin-bottom: 10%;
+  }
+  .serviceBox {
+    display: flex;
+    text-align: left;
+  }
+  .serviceIcon {
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+  }
+  .serviceTitle {
+    margin: 0 !important;
+    font-size: 16px;
+  }
+  .serviceText {
+    margin: 0 !important;
+  }
 }
 /* - 進駐區塊 */
 
 /* - 底部元件 */
 .footerArea {
-    margin: 36px 0;
+  margin: 36px 0;
 }
 .footerArea_m {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 428px) {
-    .footerArea_m {
-        display: block;
-        margin: 20px 0;
-    }
-    .footerText {
-        font-size: 14px;
-    }
+  .footerArea_m {
+    display: block;
+    margin: 20px 0;
+  }
+  .footerText {
+    font-size: 14px;
+  }
 }
 /* - 底部元件 */
 
 .m_show {
-    display: none;
+  display: none;
 }
 @media (max-width: 428px) {
-    .m_hide {
-        display: none;
-    }
-    .m_show {
-        display: block;
-    }
+  .m_hide {
+    display: none;
+  }
+  .m_show {
+    display: block;
+  }
 }
